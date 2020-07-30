@@ -1,13 +1,6 @@
 <template>
   <div class="md-example-child md-example-child-input-item-3">
     <md-field title="转出金额(元)">
-      <div
-        class="field-operator"
-        slot="action"
-        @click="onClick"
-      >
-        <md-icon name="info"></md-icon>
-      </div>
       <md-input-item
         type="money"
         v-model="value"
@@ -23,7 +16,8 @@
   </div>
 </template>
 
-<script>import {InputItem, Field, Icon, Toast} from 'mand-mobile'
+<script>
+import {InputItem, Field, Icon, Toast} from 'mand-mobile'
 
 export default {
   name: 'input-item-demo',
@@ -58,7 +52,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-example-child-input-item-3
